@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    <script src="code.js"></script>
     <title>Aristarchos Tzatzos</title>
 </head>
 <body>
+
     <div id="header">
-        <h2>ARISTARCHOS TZATZOS</h2>
+        <img id="menu_icon" src="images/menu_icon.png" alt="Navigation menu" onclick="openNav()">
+        <h2 id="title">ARISTARCHOS TZATZOS</h2>
         <div id="navigation">
             <a href="#">HOME</a>
             <a href="#">INFO</a>
@@ -17,6 +21,24 @@
             <a href="#">PROJECTS</a>
             <a href="#">CONTACT</a>
         </div>
+    </div>
+
+    <div id="sidenav">
+        <h2>ARISTARCHOS TZATZOS</h2>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Info</a>
+        <a href="#">Bio</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="home">
+        <h1 id="profession">Electronics & Computer Engineer</h1>
+        <img id="personal_photo" src="images/personal_photo_bw_flip.png" alt="Personal Photo">
+    </div>
+    
+    <div id="info">
     </div>
 </body>
 </html>
