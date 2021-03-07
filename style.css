@@ -22,7 +22,7 @@ body {
     top: 0;
     width: 100%;
     color: white;
-    transition: top 0.4s;
+    transition: top 0.5s;
 }
 
 #title {
@@ -105,15 +105,49 @@ body {
     height: 100%;
 }
 
-#profession {
+#home_info {
     position: relative;
     text-align: center;
-    color: white;
     max-width: 350px;
     margin: auto;
-    margin-top: 0;
-    padding: 0.7em;
-    top: 25%;
+    padding: 1em;
+    top: 22%;
+}
+
+#profession {
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+#social_media {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#social_media img {
+    max-width: 10%;
+    margin: 2%;
+}
+
+#social_media>a:nth-child(1)>img:hover{
+    content: url("images/logos/Facebook-hover.png");
+}
+
+#social_media>a:nth-child(2)>img:hover{
+    content: url("images/logos/Instagram-hover.png");
+}
+
+#social_media>a:nth-child(3)>img:hover{
+    content: url("images/logos/LinkedIn-hover.png");
+}
+
+#social_media>a:nth-child(4)>img:hover{
+    content: url("images/logos/Twitter-hover.png");
+}
+
+#social_media>a:nth-child(5)>img:hover{
+    content: url("images/logos/YouTube2-hover.png");
 }
 
 #personal_photo {
@@ -162,8 +196,16 @@ body {
 /* Responsive */
 
 @media (orientation: landscape) {
-    #profession {
+    
+    /* Home */
+    #home_info {
         float: left;
+        top: 30%;
+    }
+
+    #social_media img {
+        width: 8%;
+        margin: 1%;
     }
 }
 
@@ -183,11 +225,14 @@ body {
     }
 
     /* Home */
-    #profession {
+    #home_info {
         top: 30%;
-        font-size: 2.2em;
         max-width: none;
-        width: 50%;
+        width: 60%;
+    }
+
+    #profession {
+        font-size: 2.2em;
     }
 }
 
@@ -207,12 +252,19 @@ body {
     }
 
     /* Home */
-    #profession {
+    #home_info {
         float: left;
-        font-size: 2.5em;
         max-width: none;
         width: 58%;
-        top: 40%;
+        top: 32%;
+    }
+
+    #profession {
+        font-size: 2.5em;
+    }
+
+    #social_media img {
+        max-width: 6%;
     }
 
     #personal_photo {
