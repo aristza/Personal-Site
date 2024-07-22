@@ -113,7 +113,8 @@ body {
   top: 22%;
 }
 
-#profession {
+#profession,
+#employment {
   text-align: center;
   color: white;
   margin: auto;
@@ -362,6 +363,60 @@ body {
 .content img {
   max-width: 120px;
   width: 60%;
+}
+
+/* Projects */
+
+#projects {
+  background-color: #274e5c;
+}
+
+#projects > h2 {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  color: white;
+}
+
+#projects-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project {
+  /* display: flex; */
+  padding: 20px 30px;
+  margin: 20px 30px;
+  background-color: #287271;
+  position: relative;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  width: 25%;
+  min-width: 300px;
+}
+
+.project iframe,
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project p {
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+.project a {
+  text-decoration: none;
+  color: #f4a261;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
