@@ -398,8 +398,8 @@ body {
   border-radius: 6px;
   color: white;
   text-align: center;
-  width: 25%;
-  min-width: 300px;
+  width: 100%;
+  min-width: auto;
 }
 
 .project iframe,
@@ -560,6 +560,12 @@ body {
   .content p {
     font-size: 1.1em;
   }
+
+  /* Projects */
+  .project {
+    width: 25%;
+    min-width: 300px;
+  }
 }
 
 /* Desktop */
@@ -610,5 +616,11 @@ body {
   .content img {
     max-width: none;
     width: 35%;
+  }
+
+  /* Projects */
+  .project {
+    width: 25%;
+    min-width: 300px;
   }
 }
